@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Isi Surat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page center">
+  <div class="letter-frame">
+    <img src="image/background.png" alt="background" class="letter-bg">
+    <div class="letter-text" id="letterText"></div>
+  </div>
+</main>
+<script>
+const text = "Selamat ulang tahun. Terima kasih banyak selama ini.\n\nSemoga di usia yang baru ini, kamu senantiasa dilimpahi semangat baru untuk berkarya, serta kesuksesan yang lebih gemilang, baik dalam karier maupun kehidupan pribadi.\n\nDan semoga panjang umur dan sehat selalu 🥳🥳🥳🥳🥳🥳";
+let i = 0;
+const out = document.getElementById('letterText');
+function typeStep(){
+  if(i<text.length){
+    out.textContent += text.charAt(i);
+    i++;
+    setTimeout(typeStep, 35);
+  }
+}
+window.addEventListener('load', ()=> setTimeout(typeStep, 400));
+</script>
+</body>
+</html>
