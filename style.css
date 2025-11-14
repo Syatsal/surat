@@ -19,7 +19,14 @@ html,body{height:100%;margin:0;font-family:'Poppins',sans-serif;background:linea
 
 .cake-wrap img {
     display: block;
-    max-width: 50%;
+    width: 200px;          /* ukuran fix biar ga kegedean */
+    max-width: 70%;        /* tetap responsif di HP */
+    height: auto;
+}
+
+.cake-wrap img {
+    display: block;
+    width: clamp(160px, 35vw, 260px); /* otomatis menyesuaikan */
     height: auto;
 }
 
