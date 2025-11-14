@@ -19,7 +19,7 @@ html,body{height:100%;margin:0;font-family:'Poppins',sans-serif;background:linea
 
 .cake-wrap img {
     display: block;
-    max-width: 90%;
+    max-width: 50%;
     height: auto;
 }
 
